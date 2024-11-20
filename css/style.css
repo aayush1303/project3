@@ -1,0 +1,45 @@
+body {
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+:root {
+    --color-primary:#fff;
+    --color-bgPrimary: #325335;
+    --color-bgSecondary: #72AB03;
+    --color-bgTertiary:#506653;
+    --color-textPrimary: #fff;
+    --color-textSecondary:#506653;
+    --color-textTertiary:#72AB03;
+}
+
+#about{
+    background-color: #efefefd0;
+    color: var(--color-textPrimary);
+}
+
+.testimonial-carousel .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.testimonial-carousel .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 16px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 0 6px;
+}
+
+.testimonial-carousel .swiper-pagination {
+    bottom: 2px;
+}
+
+.testimonial-carousel .swiper-wrapper {
+    height: max-content;
+    width: max-content;
+    padding-bottom: 64px;
+}
+
+.testimonial-carousel .swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+
+

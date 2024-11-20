@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div id="topBar"
+    class="h-[37px] fixed w-full items-center lg:flex justify-end bg-[var(--color-bgPrimary)] z-[100] hidden">
+    <div class="text-[--color-textPrimary] text-[11px] flex flex-row justify-end gap-4 items-center pr-10">
+      <a href="#">
+        <p>ABOUT EVERGREEN</p>
+      </a>|
+      <a href="#">
+        <p>RESOURCES</p>
+      </a>|
+      <a href="#">
+        <p>CAREERS</p>
+      </a>|
+      <a href="#">
+        <p>SCHEDULE A HOME ENERGY ASSESSMENT</p>
+      </a>|
+      <a href="#">
+        <p>(206) 565-1475</p>
+      </a>
+    </div>
+  </div>
+  <header id="mainHeader"
+    class="fixed lg:top-[37px] top-0 left-0 w-full z-[100] transition-transform duration-300 ease-in-out">
+    <div class="flex justify-between items-center h-auto w-full bg-black bg-opacity-20">
+      <div>
+        <img src="https://s3.amazonaws.com/hoth.bizango/images/1261367/logo-white-4x.png" alt="" class="h-16 sm:h-20">
+      </div>
+      <div class="lg:flex h-20 flex-wrap hidden ">
+        <div
+          class="text-[var(--color-textPrimary)] flex items-center lg:justify-end gap-5 text-[12px] pr-10 flex-wrap custom-visibility ">
+          <li class="flex list-none whitespace-nowrap relative group items-start justify-start">
+            <a href="#" class="no-underline h-20 flex items-center justify-center">HEAT PUMPS</a>
+            <ul
+              class="absolute -left-16 mt-[80px] bg-[var(--color-primary)] text-center flex flex-col items-center justify-between gap-4 rounded-xl overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[400px] flex-col min-w-[240px]">
+              <li><a href="#"
+                  class="block px-4 mt-5 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">INSTALL A NEW
+                  HEAT PUMP</a>
+              </li>
+              <li><a href="#" class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">HEAT
+                  PUMP
+                  REPAIR</a>
+              </li>
+              <li><a href="#"
+                  class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">DUCTLESS</a>
+              </li>
+              <li><a href="#"
+                  class="block px-4 mb-5 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">DUAL-FUEL</a>
+              </li>
+            </ul>
+          </li>
+          <li class="flex list-none whitespace-nowrap relative group items-start justify-start">
+            <a href="#" class="no-underline h-20 flex items-center justify-center">AIR CONDITIONING</a>
+            <ul
+              class="absolute -left-16 mt-[80px] bg-[var(--color-primary)] text-center flex flex-col items-center justify-between gap-4 rounded-xl overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[400px] flex-col min-w-[240px]">
+              <li><a href="#"
+                  class="block px-4 mt-5 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">INSTALL A NEW
+                  AIR CONDITIONER</a>
+              </li>
+              <li><a href="#"
+                  class="block px-4  mb-5 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">AIR
+                  CONDITIONER REPAIR</a>
+              </li>
+            </ul>
+          </li>
+          <li class="flex list-none whitespace-nowrap relative group items-start justify-start">
+            <a href="#" class="no-underline h-20 flex items-center justify-center">GAS FURNACES</a>
+            <ul
+              class="absolute -left-16 mt-[80px] bg-[var(--color-primary)] text-center flex flex-col items-center justify-between gap-4 rounded-xl overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[400px] flex-col min-w-[240px]">
+              <li><a href="#"
+                  class="block px-4 mt-5 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">INSTALL A NEW
+                  GAS FURNACE</a>
+              </li>
+              <li><a href="#"
+                  class="block px-4 mb-5 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">FURNACE
+                  REPAIR</a>
+              </li>
+            </ul>
+          </li>
+          <li class="flex list-none whitespace-nowrap relative group items-start justify-start">
+            <a href="#" class="no-underline h-20 flex items-center justify-center">MORE SERVICES</a>
+            <ul
+              class="absolute -left-16 mt-[80px] bg-[var(--color-primary)] text-center flex flex-col items-center justify-between gap-4 rounded-xl overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[400px] flex-col min-w-[240px]">
+              <li><a href="#"
+                  class="block px-4 mt-5 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">INSTALL A NEW
+                  FURNACE</a>
+              </li>
+              <li><a href="#"
+                  class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px] w-[50%]">
+                  FURNACE REPAIR</a>
+              </li>
+              <li><a href="#" class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">
+                  NATURAL GAS PIPING</a>
+              </li>
+              <li><a href="#" class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">
+                  ELECTRICAL</a>
+              </li>
+              <li><a href="#" class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">
+                  THERMOSTATS</a>
+              </li>
+              <li><a href="#" class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">
+                  HOME AUTOMATION</a>
+              </li>
+              <li><a href="#" class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">
+                  AIR QUALITY PRODUCTS</a>
+              </li>
+              <li><a href="#" class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">
+                  CARBON MONOXIDE CHECKS</a>
+              </li>
+              <li><a href="#" class="block px-4 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">
+                  DUCT CLEANING</a>
+              </li>
+              <li><a href="#" class="block px-4 mb-5 text-gray-500 hover:text-[var(--color-textTertiary)] text-[13px]">
+                  PRODUCTS</a>
+              </li>
+            </ul>
+          </li>
+          <li class="flex list-none whitespace-nowrap">
+            <a href="#" class="no-underline">COMFORT CLUB</a>
+          </li>
+          <li class="p-1 px-2 bg-[var(--color-bgSecondary)] rounded-xl flex list-none whitespace-nowrap">
+            <a href="#" class="no-underline">24/7 SERVICE</a>
+          </li>
+        </div>
+      </div>
+      <div id="menuIcon" class="text-4xl text-[var(--color-textPrimary)] pr-10 lg:hidden flex cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </header>
+  <div id="menuContainer"
+    class="fixed top-[-100%] left-0 w-full min-h-[45vh] bg-[var(--color-bgTertiary)] text-white flex overflow-hidden transition-all duration-300 z-[1000] border-b-[5px] border-b-[var(--color-bgSecondary)]">
+    <div class="relative w-full flex flex-col justify-start">
+      <div class="w-full flex-col flex gap-10">
+        <div class="flex justify-between items-center w-full">
+          <div>
+            <img src="https://s3.amazonaws.com/hoth.bizango/images/1261367/logo-white-4x.png" alt=""
+              class="h-16 sm:h-24">
+          </div>
+          <div id="closeMenu" class="text-2xl cursor-pointer pr-10"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div class="relative flex flex-col gap-2">
+          <div class="group">
+            <div class="flex items-center justify-between px-5">
+              <li class="list-none text-white text-[15px]  cursor-pointer">HEAT PUMPS
+              </li>
+              <div id="plusToggle-1"
+                class="text-white flex items-center justify-center text-[15px] cursor-pointer mr-4">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div id="options-1" class="hidden text-white text-md bg-[var(--color-primary)] px-4">
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)] hover:text-[var(--color-textTertiary)] text-[13px]">Install
+                  a New Heat Pump</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Heat
+                  Pump Repair</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Ductless</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Dual-Fuel</a>
+              </li>
+            </div>
+          </div>
+          <div class="group">
+            <div class="flex items-center justify-between px-5">
+              <li class="list-none text-white text-[15px] cursor-pointer">AIR CONDITIONING
+              </li>
+              <div id="plusToggle-2"
+                class="text-white flex items-center justify-center text-[15px] cursor-pointer mr-4">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div id="options-2" class="hidden text-white text-md bg-[var(--color-primary)] px-4">
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Install
+                  a New Air Conditioner</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Air
+                  Conditioner Repair</a>
+              </li>
+            </div>
+          </div>
+          <div class="group">
+            <div class="flex items-center justify-between px-5">
+              <li class="list-none text-white text-[15px] cursor-pointer">GAS FURNACES
+              </li>
+              <div id="plusToggle-3"
+                class="text-white flex items-center justify-center text-[15px] cursor-pointer mr-4">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div id="options-3" class="hidden text-white text-md bg-[var(--color-primary)] px-4">
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Install
+                  a New Gas Furnace</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Furnace
+                  Repair</a>
+              </li>
+            </div>
+          </div>
+          <div class="group">
+            <div class="flex items-center justify-between px-5">
+              <li class="list-none text-white text-[15px] cursor-pointer">MORE SERVICES
+              </li>
+              <div id="plusToggle-4"
+                class="text-white flex items-center justify-center text-[15px] cursor-pointer mr-4">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div id="options-4" class="hidden text-white text-md bg-[var(--color-primary)] px-4">
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Install
+                  a New Furnace</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Furnace
+                  Repair</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Natural
+                  Gas Piping</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Electrical</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Thermostats</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Home
+                  Automation</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Air
+                  Quality Products</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Carbon
+                  Monoxide Checks</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Duct
+                  Cleaning</a>
+              </li>
+              <li class="list-none"><a href="#"
+                  class="block px-4 py-2 text-[var(--color-textSecondary)]  hover:text-[var(--color-textTertiary)] text-[13px]">Products</a>
+              </li>
+            </div>
+          </div>
+          <li class="list-none text-[15px] px-5 text-[var(--color-primary)] cursor-pointer">
+            <a href="">
+              COMFORT CLUB
+            </a>
+          </li>
+          <li class="list-none text-[15px] px-5 text-[var(--color-primary)] cursor-pointer mt-1 mb-1">
+            <a href="" class=" py-1 px-2 bg-[var(--color-bgSecondary)] rounded-xl">
+              24/7 SERVICE
+            </a>
+          </li>
+          <li class="list-none text-[15px] px-5 text-[var(--color-primary)] cursor-pointer">
+            <a href="">
+              ABOUT EVERGREEN
+            </a>
+          </li>
+          <li class="list-none text-[15px] px-5 text-[var(--color-primary)] cursor-pointer">
+            <a href="">
+              RESOURCES
+            </a>
+          </li>
+          <li class="list-none text-[15px] px-5 text-[var(--color-primary)] cursor-pointer">
+            <a href="">
+              CAREERS
+            </a>
+          </li>
+          <li class="list-none text-[15px] px-5 text-[var(--color-primary)] cursor-pointer">
+            <a href="">
+              SCHEDULE A HOME ENERGY ASSESSMENT
+            </a>
+          </li>
+          <li class="list-none text-[15px] px-5 text-[var(--color-primary)] cursor-pointer mb-4">
+            <a href="">
+              (206) 565-7452
+            </a>
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="homeService" class="relative z-1 h-[110vh] lg:h-[100vh] w-full">
+    <img src="./assets/images/hero.jpg" alt="Hero background" class="object-cover h-full w-full">
+    <div class="absolute inset-0 flex items-center justify-start pl-10 md:pl-20">
+      <div class="-mt-[350px] sm:-mt-[250px] lg:mt-0">
+        <h1 class="text-white text-4xl w-[90%] sm:text-5xl md:text-5xl font-bold md:w-[70%]">Bringing Comfort,
+          Efficiency & Healthy Indoor Air</h1>
+        <p class="text-white text-lg md:text-2xl mt-2">to Puget Sound Homes</p>
+      </div>
+    </div>
+    <div class="absolute inset-0 flex items-end justify-center  md:pl-20 sm:hidden">
+      <div class="flex flex-col items-center justify-between gap-3 mb-3">
+        <div class="flex flex-col items-center justify-between gap-1">
+          <p class="text-[var(--color-textPrimary)] text-2xl mb-2">Heat Pump Installation</p>
+          <button
+            class="p-3 px-5 bg-[var(--color-bgSecondary)]  transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">LEARN
+            MORE</button>
+        </div>
+        <div class="flex flex-col items-center justify-between gap-1">
+          <p class="text-[var(--color-textPrimary)] text-2xl mb-2 w-full">Air Conditioning Installation</p>
+          <button
+            class="p-3 px-5 bg-[var(--color-bgSecondary)]  transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">LEARN
+            MORE</button>
+        </div>
+        <div class="flex flex-col items-center justify-between gap-1">
+          <p class="text-[var(--color-textPrimary)] text-2xl mb-2">Gas Furnace</p>
+          <button
+            class="p-3 px-5 bg-[var(--color-bgSecondary)]  transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">LEARN
+            MORE</button>
+        </div>
+        <div class="flex flex-col items-center justify-between gap-1">
+          <p class="text-[var(--color-textPrimary)] text-2xl mb-2">More Services</p>
+          <button
+            class="p-3 px-5 bg-[var(--color-bgSecondary)]  transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">LEARN
+            MORE</button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative sm:-mt-[320px] md:-mt-[350px] lg:-mt-[130px] items-end  inset-0 sm:grid gap-5  hidden px-16 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="w-full items-center justify-center  flex flex-col text-[var(--color-textPrimary)]">
+        <div
+          class="w-full h-[90px] text-[18px] font-[500] text-center flex items-center justify-center bg-[var(--color-bgPrimary)] rounded-[40px] rounded-b-none">
+          <p class="w-[90%]">Heat Pump Installation</p>
+        </div>
+        <div
+          class="w-full h-[90px] flex items-center justify-center bg-[var(--color-primary)] rounded-[40px] rounded-t-none shadow-lg">
+          <button
+            class="p-3 px-5 bg-[var(--color-bgSecondary)] transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">LEARN
+            MORE</button>
+        </div>
+      </div>
+      <div class="w-full items-center justify-center flex flex-col text-[var(--color-textPrimary)]">
+        <div
+          class="w-full h-[90px] text-[18px] font-[500] text-center flex items-center justify-center bg-[var(--color-bgPrimary)] rounded-[40px] rounded-b-none">
+          <p class="w-[90%]">Air Conditioning Installation</p>
+        </div>
+        <div
+          class="w-full h-[90px] flex items-center justify-center bg-[var(--color-primary)] rounded-[40px] rounded-t-none shadow-lg">
+          <button
+            class="p-3 px-5 bg-[var(--color-bgSecondary)] transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">LEARN
+            MORE</button>
+        </div>
+      </div>
+      <div class="w-full items-center justify-center flex flex-col text-[var(--color-textPrimary)]">
+        <div
+          class="w-full h-[90px] text-[18px] font-[500] text-center flex items-center justify-center bg-[var(--color-bgPrimary)] rounded-[40px] rounded-b-none">
+          <p class="w-[90%]">Gas Furnaces</p>
+        </div>
+        <div
+          class="w-full h-[90px] flex items-center justify-center bg-[var(--color-primary)] rounded-[40px] rounded-t-none shadow-lg">
+          <button
+            class="p-3 px-5 bg-[var(--color-bgSecondary)] transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">LEARN
+            MORE</button>
+        </div>
+      </div>
+      <div class="w-full items-center justify-center flex flex-col text-[var(--color-textPrimary)]">
+        <div
+          class="w-full h-[90px] text-[18px] font-[500] text-center flex items-center justify-center bg-[var(--color-bgPrimary)] rounded-[40px] rounded-b-none">
+          <p class="w-[90%]">More Services</p>
+        </div>
+        <div
+          class="w-full h-[90px] flex items-center justify-center bg-[var(--color-primary)] rounded-[40px] rounded-t-none shadow-lg">
+          <button
+            class="p-3 px-5 bg-[var(--color-bgSecondary)] transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">LEARN
+            MORE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="w-full flex flex-col md:flex-row items-center gap-5 md:gap-0 pt-10 sm:pt-28 lg:px-12 pb-36">
+      <div class="w-full md:w-1/2 px-10">
+        <h2 class="text-3xl text-[#485E67]">We’re Puget Sound’s home energy leader, and <span
+            class="text-2xl text-[#00A0DE]">Ohio's highest rated heating and air conditioning contractor</span> since
+          1975.</h2>
+        <p class="text-[#5e7077] mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolor quisquam,
+          ab ipsa mollitia autem. Consequuntur ea possimus veritatis maiores non iure nulla placeat fuga adipisci est
+          rem, voluptate impedit?
+          Voluptatum sint placeat totam, error sapiente dolorum numquam officia atque dolor eos aliquid ipsa tempore
+          quae deserunt consequatur, adipisci aut animi officiis. Quibusdam, quasi error rem similique nisi asperiores
+          voluptas.</p>
+        <p class="text-[#485E67] mt-4 mb-5 font-[500] text-xl">Upgrade your home heating or cooling today.</p>
+        <button
+          class="p-3 w-full sm:w-[40%] md:w-[65%] lg:w-[40%] bg-[var(--color-bgSecondary)]  transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">SCHEDULE
+          A FREE ASSESSMENT</button>
+      </div>
+      <div class="w-full md:w-1/2 px-10 flex flex-col items-start gap-5">
+        <div class="w-full lg:w-1/2 lg:pr-5">
+          <img src="./assets/images/abt1.jpg" alt="About us" class="object-cover w-full h-[350px] rounded-[30px]">
+        </div>
+        <div class="w-full mt-5 lg:-mt-[100px] lg:pl-5 lg:w-1/2 lg:self-end self-start">
+          <img src="./assets/images/abt2.jpeg" alt="About us" class="object-cover w-full h-[350px] rounded-[30px]">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex items-center justify-center relative">
+    <div
+      class="flex flex-wrap justify-center items-center w-[80%] mx-auto shadow-lg h-auto bg-[#FFFFFF] p-5 gap-20 py-20 rounded-[30px] -mt-20">
+      <div class="flex flex-col items-center justify-center gap-2">
+        <img src="https://s3.amazonaws.com/hoth.bizango/images/1226769/icon_temp_thumb.png" alt=""
+          class="w-16 h-16 object-contain">
+        <span class="w-full border-[#F5F5F5] border"></span>
+        <p class="text-xl text-[#485E67] font-[500] text-center">HEAT PUMPS</p>
+        <p class="text-sm font-[500] text-[var(--color-textTertiary)]">LEARN MORE</p>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-2">
+        <img src="https://s3.amazonaws.com/hoth.bizango/images/1226764/icon_snowflake_thumb.png" alt=""
+          class="w-16 h-16 object-contain">
+        <span class="w-full border-[#F5F5F5] border"></span>
+        <p class="text-xl text-[#485E67] font-[500] text-center">AIR CONDITIONING</p>
+        <p class="text-sm font-[500] text-[var(--color-textTertiary)]">LEARN MORE</p>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-2">
+        <img src="https://s3.amazonaws.com/hoth.bizango/images/1226722/icon_ductless-heatpumps_thumb.png" alt=""
+          class="w-16 h-16 object-contain">
+        <span class="w-full border-[#F5F5F5] border"></span>
+        <p class="text-xl text-[#485E67] font-[500] text-center">DUCTLESS HEAT PUMPS</p>
+        <p class="text-sm font-[500] text-[var(--color-textTertiary)]">LEARN MORE</p>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-2">
+        <img src="https://s3.amazonaws.com/hoth.bizango/images/1226730/icon_flame_thumb.png" alt=""
+          class="w-16 h-16 object-contain">
+        <span class="w-full border-[#F5F5F5] border"></span>
+        <p class="text-xl text-[#485E67] font-[500] text-center">GAS FURNACE</p>
+        <p class="text-sm font-[500] text-[var(--color-textTertiary)]">LEARN MORE</p>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-2">
+        <img src="https://s3.amazonaws.com/hoth.bizango/images/1226743/icon_plus-more_thumb.png" alt=""
+          class="w-16 h-16 object-contain">
+        <span class="w-full border-[#F5F5F5] border"></span>
+        <p class="text-xl text-[var(--color-textTertiary)] font-[500] text-center">MORE...</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="px-20 flex flex-col w-full md:flex-row items-start justify-center gap-5 lg:gap-10 mt-20 mb-20">
+      <!-- Left Container -->
+      <div class="flex-col flex justify-start items-center w-full md:w-1/2">
+        <img src="./assets/images/contact1.jpeg" alt="" class="w-full h-[350px] object-cover rounded-[30px]">
+        <div class="flex-col flex justify-start items-start xl:px-16 mt-5">
+          <h2 class="text-3xl text-[#485E67] text-left">
+            <span class="text-3xl text-[#00A0DE]">24/7</span> Repairs and Service
+          </h2>
+          <p class="text-[#5e7077] mt-5 text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illum,
+            commodi et id, deserunt cupiditate ut repellat, at quo vitae iure? Quasi qui fugit dolorem, provident alias
+            dolore consectetur vero?</p>
+          <p class="text-3xl text-[#485E67] mt-5">Call now (206) 565-1455</p>
+          <button
+            class="p-3 w-full xl:w-[50%] bg-[var(--color-bgSecondary)] transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] mt-5 text-[13px]">
+            CONTACT US ONLINE
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Container -->
+      <div class="flex-col flex justify-start items-center w-full md:w-1/2">
+        <img src="./assets/images/contact2.jpg" alt="" class="w-full h-[350px] object-cover rounded-[30px]">
+        <div class="flex-col flex justify-start items-start xl:px-16 mt-5">
+          <h2 class="text-3xl text-[#485E67]">
+            Join the <span class="text-3xl text-[#00A0DE] pl-2">Evergreen Home Comfort Club</span>
+          </h2>
+          <p class="text-[#5e7077] mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit illum, commodi et
+            id, deserunt cupiditate ut repellat, at quo vitae iure? Quasi qui fugit dolorem, provident alias dolore
+            consectetur vero?</p>
+          <p class="text-xl text-[#485E67] mt-5 font-[500] text-left">HASSLE-FREE MAINTENANCE PLANS</p>
+          <p class="text-xl text-[#485E67] mt-1 font-[500] text-left">Learn why Puget Sound homeowners love the
+            Evergreen Comfort Club</p>
+          <button
+            class="p-3 w-full xl:w-[50%] bg-[var(--color-bgSecondary)] transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] mt-5 text-[13px]">
+            EVERGREEN HOME COMFORT CLUB
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 testimonial-carousel bg-[var(--color-bgPrimary)]">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-16">
+      <div class="mb-8 ">
+        <span class="text-sm text-[var(--color-bgTertiary)] font-medium text-center block mb-2">TESTIMONIAL</span>
+        <h2 class="text-4xl text-center font-bold text-[#fff] ">What our happy user says!</h2>
+      </div>
+      <!--Slider wrapper-->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper w-max">
+          <div class="swiper-slide">
+            <div
+              class="group flex flex-col items-center justify-start text-center border-solid border-gray-300 rounded-xl p-6 px-16 transition-all duration-500  w-full mx-auto  min-h-[300px]">
+              <div class="">
+                <p class="text-[#fff] text-2xl font-[500]">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dicta exercitationem, veritatis quibusdam delectus perferendis quisquam ipsa sequi quos quo nisi nobis
+                  maiores temporibus."</p>
+                <p class="text-md font-[500] text-[#fff] mt-10 leading-6  transition-all duration-500 pb-8 ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad harum ex voluptate sint quae
+                  doloribus, natus eos debitis? Velit eveniet hic sequi nulla autem quis a, itaque vero aut.
+                  Excepturi possimus optio inventore labore, fuga ea doloribus vero, deleniti impedit praesentium nihil
+                  consequuntur quo cum asperiores maiores alias reprehenderit a illum, corporis blanditiis quaerat
+                  distinctio quis quisquam facere! Soluta?
+                </p>
+              </div>
+              <div class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
+                <div class="block">
+                  <h5 class="text-[#fff] font-medium transition-all duration-500 text-xl  mb-1">Jane D</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="group flex flex-col items-center justify-start text-center border-solid border-gray-300 rounded-xl p-6 px-16 transition-all duration-500  w-full mx-auto  min-h-[300px]">
+              <div class="">
+                <p class="text-[#fff] text-2xl font-[500]">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dicta exercitationem, veritatis quibusdam delectus perferendis quisquam ipsa sequi quos quo nisi nobis
+                  maiores temporibus."</p>
+                <p class="text-md font-[500] text-[#fff] mt-10 leading-6  transition-all duration-500 pb-8 ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad harum ex voluptate sint quae
+                  doloribus, natus eos debitis? Velit eveniet hic sequi nulla autem quis a, itaque vero aut.
+                  quaerat distinctio quis quisquam facere! Soluta?
+                </p>
+              </div>
+              <div class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
+                <div class="block">
+                  <h5 class="text-[#fff] font-medium transition-all duration-500 text-xl  mb-1">Jane D</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="group flex flex-col items-center justify-start text-center border-solid border-gray-300 rounded-xl p-6 px-16 transition-all duration-500  w-full mx-auto  min-h-[300px]">
+              <div class="">
+                <p class="text-[#fff] text-2xl font-[500]">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dicta exercitationem, veritatis quibusdam delectus perferendis quisquam ipsa sequi quos quo nisi nobis
+                  maiores temporibus."</p>
+                <p class="text-md font-[500] text-[#fff] mt-10 leading-6  transition-all duration-500 pb-8 ">
+                  Excepturi possimus optio inventore labore, fuga ea doloribus vero, deleniti impedit praesentium nihil
+                  consequuntur quo cum asperiores maiores alias reprehenderit a illum, corporis blanditiis quaerat
+                  distinctio quis quisquam facere! Soluta?
+                </p>
+              </div>
+              <div class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
+                <div class="block">
+                  <h5 class="text-[#fff] font-medium transition-all duration-500 text-xl  mb-1">Jane D</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="group flex flex-col items-center justify-start text-center border-solid border-gray-300 rounded-xl p-6 px-16 transition-all duration-500  w-full mx-auto  min-h-[300px]">
+              <div class="">
+                <p class="text-[#fff] text-2xl font-[500]">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dicta exercitationem, veritatis quibusdam delectus perferendis quisquam ipsa sequi quos quo nisi nobis
+                  maiores temporibus."</p>
+                <p class="text-md font-[500] text-[#fff] mt-10 leading-6  transition-all duration-500 pb-8 ">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad harum ex voluptate sint quae
+                  doloribus, natus eos debitis? Velit eveniet hic sequi nulla autem quis a, itaque vero aut.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ad harum ex voluptate sint quae
+                  doloribus, natus eos debitis? Velit eveniet hic sequi nulla autem quis a, itaque vero aut.
+                  Excepturi possimus optio inventore labore, fuga ea doloribus vero, deleniti impedit praesentium nihil
+                  consequuntur quo cum asperiores maiores alias reprehenderit a illum, corporis blanditiis quaerat
+                  distinctio quis quisquam facere! Soluta?
+                </p>
+              </div>
+              <div class="flex items-center gap-5 border-t border-solid border-gray-200 pt-5">
+                <div class="block">
+                  <h5 class="text-[#fff] font-medium transition-all duration-500 text-xl  mb-1">Jane D</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 px-28">
+      <div
+        class="flex flex-col items-center gap-2 justify-between px-6 py-6 border-[var(--color-bgTertiary)] border rounded-[30px]">
+        <p class="text-3xl font-[1000] text-[var(--color-textPrimary)] ">500+</p>
+        <p class="text-[var(--color-textPrimary)] text-center text-xl">
+          Google Reviews
+        </p>
+        <div class="text-[var(--color-bgSecondary)] flex flex-row text-lg">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center gap-2 justify-between px-6 py-6 border-[var(--color-bgTertiary)] border rounded-[30px]">
+        <p class="text-3xl font-[1000] text-[var(--color-textPrimary)] ">94</p>
+        <p class="text-[var(--color-textPrimary)] text-center text-xl">
+          Angi Reviews
+        </p>
+        <div class="text-[var(--color-bgSecondary)] flex flex-row text-lg">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center gap-2 justify-between px-6 py-6 border-[var(--color-bgTertiary)] border rounded-[30px]">
+        <p class="text-3xl font-[1000] text-[var(--color-textPrimary)] ">10</p>
+        <p class="text-[var(--color-textPrimary)] text-center text-xl">
+          Houzz Reviews
+        </p>
+        <div class="text-[var(--color-bgSecondary)] flex flex-row text-lg">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center gap-2 justify-between px-6 py-6 border-[var(--color-bgTertiary)] border rounded-[30px]">
+        <p class="text-3xl font-[1000] text-[var(--color-textPrimary)] ">600+</p>
+        <p class="text-[var(--color-textPrimary)] text-center text-xl">
+          Facebook Reviews
+        </p>
+        <div class="text-[var(--color-bgSecondary)] flex flex-row text-lg">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="w-full flex flex-col md:flex-row items-center gap-5 md:gap-0 pt-10 sm:pt-28 lg:px-12 pb-36">
+      <div class="w-full md:w-1/2 px-10">
+        <h2 class="text-3xl text-[#485E67]">We are an authorized dealer and installer for Mitsubishi heat pumps.</h2>
+        <p class="text-[#5e7077] mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolor quisquam,
+          ab ipsa mollitia autem. Consequuntur ea possimus veritatis maiores non iure nulla placeat fuga adipisci est
+          rem, voluptate impedit?
+          Voluptatum sint placeat totam, error sapiente dolorum numquam officia atque dolor eos aliquid ipsa tempore
+          quae deserunt consequatur, adipisci aut animi officiis. Quibusdam, quasi error rem similique nisi asperiores
+          voluptas.</p>
+        <button
+          class="p-3 w-full mt-10 sm:w-[40%] md:w-[65%] lg:w-[40%] bg-[var(--color-bgSecondary)]  transition-colors cursor-pointer hover:bg-[var(--color-bgPrimary)] transition-transform duration-300 ease-in-out text-[var(--color-textPrimary)] rounded-[40px] text-[13px]">EXPLORE
+          MITSUBISHI</button>
+      </div>
+      <div class="w-full md:w-1/2 px-10 flex flex-col items-center">
+        <div class="w-full">
+          <img src="./assets/images/mitsubishi.jpg" alt="About us"
+            class="object-cover w-full min-h-[450px] rounded-[30px]">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-20 p-4">
+    <div class="flex flex-col items-center justify-between gap-4 mb-16 mt-10 text-center">
+      <span class="text-4xl text-[#00A0DE]"><i class="fa-brands fa-instagram"></i></span>
+      <p class="text-[var(--color-bgTertiary)]">Follow Evergreen</p>
+      <h2 class="text-3xl text-[var(--color-bgTertiary)]">Recent Installations</h2>
+    </div>
+    <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="aspect-w-1 aspect-h-1 lg:col-span-2 lg:row-span-2">
+        <img src="./assets/images/abt1.jpg" alt="Image 1" class="w-full h-full object-cover rounded-[30px]">
+      </div>
+      <div class="aspect-w-1 aspect-h-1">
+        <img src="./assets/images/abt2.jpeg" alt="Image 2" class="w-full h-full object-cover rounded-[30px]">
+      </div>
+      <div class="aspect-w-1 aspect-h-1">
+        <img src="./assets/images/contact1.jpeg" alt="Image 3" class="w-full h-full object-cover rounded-[30px]">
+      </div>
+      <div class="aspect-w-2 aspect-h-1 lg:col-span-2">
+        <img src="./assets/images/contact2.jpg" alt="Image 4" class="w-full h-full object-cover rounded-[30px]">
+      </div>
+      <div class="aspect-w-1 aspect-h-1">
+        <img src="./assets/images/abt1.jpg" alt="Image 5" class="w-full h-full object-cover rounded-[30px]">
+      </div>
+      <div class="aspect-w-1 aspect-h-1">
+        <img src="./assets/images/abt2.jpeg" alt="Image 6" class="w-full h-full object-cover rounded-[30px]">
+      </div>
+      <div class="aspect-w-1 aspect-h-1">
+        <img src="./assets/images/mitsubishi.jpg" alt="Image 7" class="w-full h-full object-cover rounded-[30px]">
+      </div>
+      <div class="aspect-w-1 aspect-h-1">
+        <img src="./assets/images/mitsubishi.jpg" alt="Image 8" class="w-full h-full object-cover rounded-[30px]">
+      </div>
+    </div>
+  </section>
+
+  <script src="./script/script.js"></script>
+</body>
+
+
+</html>
