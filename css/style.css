@@ -12,6 +12,9 @@ body {
     --color-textPrimary: #fff;
     --color-textSecondary:#506653;
     --color-textTertiary:#72AB03;
+    --color-bgFaq:#4F6552;
+    --color-textFaq:#485E67;
+    --color-bgFooter: #3A4C55;
 }
 
 #about{

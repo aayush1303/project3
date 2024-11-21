@@ -59,3 +59,35 @@ var swiper = new Swiper(".testimonial-carousel .mySwiper", {
         },
     },
 });
+
+function toggleFaq(id) {
+    const allFaqContents = document.querySelectorAll('.faq-content');
+    const allIcons = document.querySelectorAll('.faq-icon i');
+
+
+    const faqContent = document.getElementById(`faq-${id}`);
+    const icon = document.getElementById(`icon-${id}`).querySelector('i');
+
+    const isCurrentlyOpen = !faqContent.classList.contains('max-h-0');
+
+    allFaqContents.forEach(content => {
+        content.classList.add('max-h-0');
+        content.classList.remove('max-h-screen', 'pb-4');
+    });
+
+
+    allIcons.forEach(icon => {
+        icon.classList.remove('fa-minus');
+        icon.classList.add('fa-plus');
+        icon.classList.remove('text-black');
+    });
+
+
+
+    if (!isCurrentlyOpen) {
+        faqContent.classList.remove('max-h-0');
+        faqContent.classList.add('max-h-screen', 'pb-4');
+        icon.classList.remove('fa-plus');
+        icon.classList.add('fa-minus');
+    }
+}

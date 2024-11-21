@@ -42,14 +42,14 @@
   <header id="mainHeader"
     class="fixed lg:top-[37px] top-0 left-0 w-full z-[100] transition-transform duration-300 ease-in-out">
     <div class="flex justify-between items-center h-auto w-full bg-black bg-opacity-20">
-      <div>
+      <a href="./index.html">
         <img src="https://s3.amazonaws.com/hoth.bizango/images/1261367/logo-white-4x.png" alt="" class="h-16 sm:h-20">
-      </div>
+      </a>
       <div class="lg:flex h-20 flex-wrap hidden ">
         <div
           class="text-[var(--color-textPrimary)] flex items-center lg:justify-end gap-5 text-[12px] pr-10 flex-wrap custom-visibility ">
           <li class="flex list-none whitespace-nowrap relative group items-start justify-start">
-            <a href="#" class="no-underline h-20 flex items-center justify-center">HEAT PUMPS</a>
+            <a href="./heatpumps/index.html" class="no-underline h-20 flex items-center justify-center">HEAT PUMPS</a>
             <ul
               class="absolute -left-16 mt-[80px] bg-[var(--color-primary)] text-center flex flex-col items-center justify-between gap-4 rounded-xl overflow-hidden max-h-0 transition-max-height duration-300 ease-in-out group-hover:max-h-[400px] flex-col min-w-[240px]">
               <li><a href="#"
@@ -161,8 +161,12 @@
         <div class="relative flex flex-col gap-2">
           <div class="group">
             <div class="flex items-center justify-between px-5">
-              <li class="list-none text-white text-[15px]  cursor-pointer">HEAT PUMPS
-              </li>
+              <li class="list-none">
+                <a href="./heatpumps/index.html" class="text-white text-[15px] cursor-pointer hover:text-[var(--color-textPrimary)] transition duration-300">
+                  HEAT PUMPS
+                </a>
+              </li>              
+            </li>
               <div id="plusToggle-1"
                 class="text-white flex items-center justify-center text-[15px] cursor-pointer mr-4">
                 <i class="fa-solid fa-plus"></i>
@@ -316,6 +320,7 @@
 
   <div id="homeService" class="relative z-1 h-[110vh] lg:h-[100vh] w-full">
     <img src="./assets/images/hero.jpg" alt="Hero background" class="object-cover h-full w-full">
+    <div class="absolute inset-0 bg-black opacity-30 z-0"></div>
     <div class="absolute inset-0 flex items-center justify-start pl-10 md:pl-20">
       <div class="-mt-[350px] sm:-mt-[250px] lg:mt-0">
         <h1 class="text-white text-4xl w-[90%] sm:text-5xl md:text-5xl font-bold md:w-[70%]">Bringing Comfort,
@@ -726,6 +731,123 @@
       </div>
     </div>
   </section>
+
+  <footer>
+    <div class="bg-[var(--color-bgFooter)] text-[#FFFFFF] py-10 px-20 mt-28">
+        <div class="container mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- First Column (Logo and Description) -->
+            <div class="space-y-4">
+                <img src="./assets/images/logo2.png" alt="Logo"
+                    class="min-w-42 -ml-[16%] ">
+                <p class="mb-4">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptates. Quisquam,
+                    voluptates.
+                    Quisquam, voluptates. Quisquam, voluptates.
+                </p>
+
+                <!-- Social Media Links -->
+                <div class="flex gap-2 flex-col items-start">
+                    <div
+                        class="flex gap-2 items-center justify-center text-[15px] hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                        <span class="text-[var(--color-textTertiary)]"><i class="fa-solid fa-location-dot"></i>
+                        </span>Downtown, Columbus, Ohio
+
+                    </div>
+                    <div
+                        class=" md:flex md:items-center md:justify-center gap-2  hover:text-[var(--color-textPrimary)] cursor-pointer transition duration-300 ease-in-out">
+                        <span class="text-[var(--color-textTertiary)]"><i
+                                class="fa-solid fa-envelope pr-2 md:pr-0"></i>
+                        </span>needhelp@company.com
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Column (Services) -->
+            <div class="space-y-4 lg:pl-20">
+                <p class="text-lg font-bold">Quick Links</p>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="./index.html" class="cursor-pointer ">
+                            <i
+                                class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/about.html" class="cursor-pointer hover:text-[#fff]">
+                            <i
+                                class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/serviceArea.html" class="cursor-pointer hover:text-[#fff]">
+                            <i
+                                class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./pages/blog.html"
+                            class="cursor-pointer hover:text-[#fff] transition duration-300">
+                            <i
+                                class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Blog
+                        </a>
+                    </li>
+                    <li>
+                      <a href="./pages/contact.html"
+                          class="cursor-pointer hover:text-[#fff] transition duration-300">
+                          <i
+                              class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Contact
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./pages/gallery.html"
+                          class="cursor-pointer hover:text-[#fff] transition duration-300">
+                          <i
+                              class="fa-solid fa-plus text-sm mr-2 hidden group-hover:inline-block transition duration-300 ease-in-out"></i>Gallery
+                      </a>
+                  </li>
+                </ul>
+            </div>
+            <!-- Third Column (Quick Links) -->            
+             <div class="space-y-4">
+              <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26410.293403849428!2d-83.01148592680975!3d39.964280848376795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88388f2fc58bb6e5%3A0xdbbe8dd1f9c928f2!2sDowntown%2C%20Columbus%2C%20OH%2043215%2C%20USA!5e0!3m2!1sen!2sin!4v1732167800110!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-black min-h-[80px] flex flex-col md:flex-row justify-between items-center px-[7%] gap-5">
+        <p class="text-center text-[var(--color-textPrimary)] py-4 md:py-0">© 2024 All Rights Reserved
+            by <a href="#" class="text-[#fff] hover:underline">ABC</a>
+            <a href="#" class="text-[14px] pr-1 hover:underline cursor-pointer whitespace-nowrap">
+                <strong>Terms & conditions</strong>
+            </a>
+            |
+            <a href="#"
+                class="text-[14px] pl-1 hover:underline cursor-pointer whitespace-nowrap">
+                <strong>Privacy Policy</strong>
+            </a>
+        </p>
+        <div class="flex space-x-4 mb-5 md:mb-0">
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12  bg-[var(--color-bgFooter)] hover:bg-[var(--color-textTertiary)] transition duration-200 rounded-full">
+                <i class="fab fa-facebook-f text-white"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12  bg-[var(--color-bgFooter)] hover:bg-[var(--color-textTertiary)] transition duration-200 rounded-full">
+                <i class="fab fa-instagram text-white"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12  bg-[var(--color-bgFooter)] hover:bg-[var(--color-textTertiary)] transition duration-200 rounded-full">
+                <i class="fab fa-twitter text-white"></i>
+            </a>
+            <a href="#"
+                class="flex items-center justify-center w-12 h-12  bg-[var(--color-bgFooter)] hover:bg-[var(--color-textTertiary)] transition duration-200 rounded-full">
+                <i class="fa-regular fa-envelope text-white"></i>
+            </a>
+        </div>
+    </div>
+</footer>
 
   <script src="./script/script.js"></script>
 </body>
