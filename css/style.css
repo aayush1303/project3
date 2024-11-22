@@ -6,21 +6,19 @@ body {
 
 :root {
     --color-primary:#fff;
+    --color-secondary:#efefefd0;
     --color-bgPrimary: #325335;
     --color-bgSecondary: #72AB03;
     --color-bgTertiary:#506653;
     --color-textPrimary: #fff;
     --color-textSecondary:#506653;
     --color-textTertiary:#72AB03;
+    --color-textHighlight:#00A0DE;
     --color-bgFaq:#4F6552;
     --color-textFaq:#485E67;
     --color-bgFooter: #3A4C55;
 }
 
-#about{
-    background-color: #efefefd0;
-    color: var(--color-textPrimary);
-}
 
 .testimonial-carousel .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .testimonial-carousel .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
